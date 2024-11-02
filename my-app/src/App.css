@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -11,11 +20,9 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -27,16 +34,48 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .logo {
+    height: 4em; /* Diminui o tamanho do logo em telas menores */
+  }
+
+  #root {
+    padding: 1rem; /* Reduz o padding em telas menores */
+  }
+
+  .MuiToolbar-root {
+    flex-direction: column; /* Muda a direção da toolbar para coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .MuiButton-root {
+    font-size: 0.9rem; /* Ajusta o tamanho dos botões */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Tamanho de fonte menor para cabeçalho */
+  }
+
+  p {
+    font-size: 1rem; /* Tamanho de fonte menor para texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .logo {
+    height: 5em; /* Tamanho médio para logo */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamanho de fonte médio para cabeçalho */
+  }
 }
