@@ -1,7 +1,6 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
-// Definindo as traduções
 const resources = {
   en: {
     translation: {
@@ -9,10 +8,15 @@ const resources = {
         solutions: "Solutions",
         cases: "Cases",
         aboutUs: "About Us",
-        customerSupport: "Customer Support"
+        customerSupport: "Customer Support",
       },
-      welcome: "Welcome to our website!",
-      mainContent: "Here is the main content."
+      main: {
+        welcomeBold: "Boost your sales",
+        welcomeText: "with a validated methodology",
+        mainContent:
+          "Imagine facing the challenge of having too many clients. This is exactly the kind of challenge you'll have when you hire our services.",
+        mainButton: "Sell More",
+      },
     },
   },
   pt: {
@@ -21,10 +25,15 @@ const resources = {
         solutions: "Soluções",
         cases: "Cases",
         aboutUs: "Quem Somos",
-        customerSupport: "Atendimento ao Cliente"
+        customerSupport: "Atendimento ao Cliente",
       },
-      welcome: "Bem-vindo ao nosso site!",
-      mainContent: "Aqui está o conteúdo principal."
+      main: {
+        welcomeBold: "Aumente as vendas",
+        welcomeText: "do seu negócio através de uma metodologia validada",
+        mainContent:
+          "Imagine enfrentar o desafio de ter clientes demais. É exatamente esse tipo de desafio que você vai ter ao contratar os nossos serviços.",
+        mainButton: "Vender mais",
+      },
     },
   },
   es: {
@@ -33,31 +42,33 @@ const resources = {
         solutions: "Soluciones",
         cases: "Casos",
         aboutUs: "Quiénes Somos",
-        customerSupport: "Atención al Cliente"
+        customerSupport: "Atención al Cliente",
       },
-      welcome: "¡Bienvenido a nuestro sitio web!",
-      mainContent: "Aquí está el contenido principal."
+      main: {
+        welcomeBold: "Aumenta las ventas",
+        welcomeText: "de tu negocio con una metodología validada",
+        mainContent:
+          "Imagina enfrentar el desafío de tener demasiados clientes. Este es exactamente el tipo de desafío que tendrás al contratar nuestros servicios.",
+        mainButton: "Vender más",
+      },
     },
   },
 };
 
 // Função para detectar o idioma do navegador
 const getBrowserLanguage = () => {
-  const language = navigator.language || navigator.userLanguage; 
-  const lang = language.split('-')[0]; 
-
-  return resources[lang] ? lang : 'en';
+  const language = navigator.language || navigator.userLanguage;
+  const lang = language.split("-")[0];
+  return resources[lang] ? lang : "en";
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: getBrowserLanguage(), 
-    fallbackLng: 'en', 
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: getBrowserLanguage(),
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

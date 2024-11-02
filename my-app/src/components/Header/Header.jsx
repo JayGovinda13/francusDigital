@@ -18,10 +18,6 @@ function Header() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
