@@ -1,17 +1,17 @@
-import React from "react"; 
 import "./App.css";
 import Header from "./components/Header/Header";
-import { useTranslation } from 'react-i18next'; 
 import Main from "./components/Main/Main";
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
-  const { t } = useTranslation(); 
+
 
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <Main />
-    </>
+    </BrowserRouter>
   );
 }
 

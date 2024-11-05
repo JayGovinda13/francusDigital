@@ -16,6 +16,14 @@ const resources = {
         mainContent:
           "Imagine facing the challenge of having too many clients. This is exactly the kind of challenge you'll have when you hire our services.",
         mainButton: "Sell More",
+        pillarsIntro: "We work on strengthening",
+        pillarsHighlight: "5 fundamental pillars",
+        pillarsEnd: "of your business.",
+        plannig: "Planning",
+        organization: "Organization",
+        performance: "Performance",
+        relationship: "Relationship",
+        result: "Result",
       },
     },
   },
@@ -33,6 +41,14 @@ const resources = {
         mainContent:
           "Imagine enfrentar o desafio de ter clientes demais. É exatamente esse tipo de desafio que você vai ter ao contratar os nossos serviços.",
         mainButton: "Vender mais",
+        pillarsIntro: "Trabalhamos com fortalecimento de",
+        pillarsHighlight: "5 pilares fundamentais",
+        pillarsEnd: "do seu negócio.",
+        plannig: "Planejamento",
+        organization: "Organização",
+        performance: "Desempenho",
+        relationship: "Relacionamento",
+        result: "Resultado",
       },
     },
   },
@@ -50,6 +66,14 @@ const resources = {
         mainContent:
           "Imagina enfrentar el desafío de tener demasiados clientes. Este es exactamente el tipo de desafío que tendrás al contratar nuestros servicios.",
         mainButton: "Vender más",
+        pillarsIntro: "Trabajamos en el fortalecimiento de",
+        pillarsHighlight: "5 pilares fundamentales",
+        pillarsEnd: "de tu negocio.",
+        plannig: "Planificación",
+        organization: "Organización",
+        performance: "Desempeño",
+        relationship: "Relaciones",
+        result: "Resultado",
       },
     },
   },
@@ -72,3 +96,4 @@ i18n.use(initReactI18next).init({
 });
 
 export default i18n;
+
