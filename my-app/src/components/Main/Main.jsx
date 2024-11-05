@@ -14,7 +14,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import GroupIcon from "@mui/icons-material/Group";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { blueGrey } from "@mui/material/colors";
+import { orange } from "@mui/material/colors";
 
 function Main() {
   const { t } = useTranslation();
@@ -66,7 +66,7 @@ function Main() {
             }}
           >
             {t("main.mainButton")}
-            <DoneIcon sx={{ color: blueGrey[700], marginLeft: "0.5rem" }} />
+            <DoneIcon sx={{ color: orange[400], marginLeft: "0.5rem" }} />
           </Button>
         </Box>
 
