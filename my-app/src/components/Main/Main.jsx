@@ -37,7 +37,7 @@ function Main() {
           sx={{
             paddingLeft: { xs: "20rem", sm: "16rem" },
             color: "#3279ba",
-            marginTop: "15rem",
+            marginTop: "10rem",
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-start",
@@ -46,11 +46,11 @@ function Main() {
             width: { xs: "100%", sm: "40%" },
           }}
         >
-          <Typography variant="h4" component="h1" gutterBottom>
+          <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 800 }}>
             <span style={{ fontWeight: "bold" }}>{t("main.welcomeBold")}</span>{" "}
             {t("main.welcomeText")}
           </Typography>
-          <Typography variant="body1" component="h2" sx={{ mb: 4 }}>
+          <Typography variant="body1" component="h2" sx={{ mb: 4, fontWeight: 700 }}>
             {t("main.mainContent")}
           </Typography>
           <Button
@@ -60,8 +60,11 @@ function Main() {
               color: "#F7F5F0",
               display: "flex",
               alignItems: "center",
+              fontFamily: "Lexend",
               "&:hover": {
-                backgroundColor: "#1e4a73",
+                backgroundColor: "#52abfe",
+              
+            
               },
             }}
           >
@@ -84,7 +87,7 @@ function Main() {
             <img
               src="/img/fotoTeste.webp"
               alt="Teste"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "80%", height: "auto" }}
             />
           </ImageListItem>
         </Box>

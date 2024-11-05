@@ -61,6 +61,7 @@ html, body {
 
   .MuiButton-root {
     font-size: 0.9rem; /* Ajusta o tamanho dos botões */
+    font-family: Lexend, sans-serif;
   }
 
   h1 {
